@@ -2,9 +2,37 @@
 <html lang="en-US">
   <head>
     <title>Elodie June Design, LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
-    <h1>The Elodie June website is coming soon!</h1>
-    <div>Until then, check out <a href="https://instagram.com/the.polo.house">The Polo House</a> on instagram</div>
+    <div id="bg" class="a"></div>
+    <div class="headers">
+      <h1>elodie june</h1>
+      <h2>interior design consulting</h2>
+    </div>
+    <div class="footers">
+      <div><a href="mailto:mollybnd@yahoo.com?subject=EJD%20contact%20email">Email Me</a></div>
+      <div>&copy; 2022 | Elodie June Design, LLC</div>
+      <div><a href="https://instagram.com/the.polo.house" target="_blank">the.polo.house</a></div>
+    </div>
+    <script>
+      const images = 'abkcjdiehfg'.split('');
+      const bg = document.getElementById('bg');
+      const reClass = className => bg.className = className;
+      const newBg = className => {
+        reClass(`${bg.className} fade`);
+        setTimeout(() => reClass(`${className} fade`), 500);
+        setTimeout(() => reClass(className), 1000);
+      }
+
+      let i = 0;
+      setInterval(() => {
+        i = images[i+1] ? i+1 : 0;
+        newBg(images[i]);
+      }, 5000);
+    </script>
   </body>
 </html>
