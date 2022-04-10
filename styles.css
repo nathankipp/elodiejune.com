@@ -1,0 +1,119 @@
+html,
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.a,.b,.c {
+  opacity: 1;
+  transition: opacity .5s;
+}
+.fade {
+  opacity: 0;
+}
+.a { background-image: url(img/a-s.jpg); }
+.b { background-image: url(img/b-s.jpg); }
+.c { background-image: url(img/c-s.jpg); }
+.d { background-image: url(img/d-s.jpg); }
+.e { background-image: url(img/e-s.jpg); }
+.f { background-image: url(img/f-s.jpg); }
+.g { background-image: url(img/g-s.jpg); }
+.h { background-image: url(img/h-s.jpg); }
+.i { background-image: url(img/i-s.jpg); }
+.j { background-image: url(img/j-s.jpg); }
+.k { background-image: url(img/k-s.jpg); }
+@media screen and (min-width: 992px) {
+  .a { background-image: url(img/a-m.jpg); }
+  .b { background-image: url(img/b-m.jpg); }
+  .c { background-image: url(img/c-m.jpg); }
+  .d { background-image: url(img/d-m.jpg); }
+  .e { background-image: url(img/e-m.jpg); }
+  .f { background-image: url(img/f-m.jpg); }
+  .g { background-image: url(img/g-m.jpg); }
+  .h { background-image: url(img/h-m.jpg); }
+  .i { background-image: url(img/i-m.jpg); }
+  .j { background-image: url(img/j-m.jpg); }
+  .k { background-image: url(img/k-m.jpg); }
+}
+@media screen and (min-width: 1200px) {
+  .a { background-image: url(img/a-l.jpg); }
+  .b { background-image: url(img/b-l.jpg); }
+  .c { background-image: url(img/c-l.jpg); }
+  .d { background-image: url(img/d-l.jpg); }
+  .e { background-image: url(img/e-l.jpg); }
+  .f { background-image: url(img/f-l.jpg); }
+  .g { background-image: url(img/g-l.jpg); }
+  .h { background-image: url(img/h-l.jpg); }
+  .i { background-image: url(img/i-l.jpg); }
+  .j { background-image: url(img/j-l.jpg); }
+  .k { background-image: url(img/k-l.jpg); }
+}
+
+.headers {
+  align-items: center;
+  background-color: rgba(255, 255, 255, .5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .5rem 0 1.5rem 0;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0 0 .1rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.footers {
+  background-color: white;
+  bottom: 0;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  justify-content: space-around;
+  padding: .25rem;
+  position: absolute;
+  width: 100%;
+}
+.footers div:first-child,
+.footers div:last-child {
+  width: 25%;
+}
+.footers div:last-child {
+  text-align: right;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
