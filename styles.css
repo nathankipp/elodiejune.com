@@ -20,7 +20,7 @@ body {
   z-index: 0;
 }
 
-.a,.b,.c {
+.a,.b,.c,.d,.e,.f,.g,.h,.i,.j,.k {
   opacity: 1;
   transition: opacity .5s;
 }
